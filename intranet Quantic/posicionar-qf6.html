@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ingreso - Quantic Marketing</title>
+    
+    <!--HOJA DE ESTILOS-->
+    <!--=================================================-->
+    <!--Open Sans Fuente de texto-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
+    <!--OSWLAD Fuente de titulos-->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700" rel="stylesheet">
+    <!--Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--Plantilla-->
+    <link href="css/nifty.min.css" rel="stylesheet">
+    <!--Iconos-->
+    <link href="premium/icon-sets/icons/line-icons/premium-line-icons.min.css" rel="stylesheet">
+    <link href="premium/icon-sets/icons/solid-icons/premium-solid-icons.min.css" rel="stylesheet">
+    <!--=================================================-->
+    <!--Progress Bar-->
+    <link href="css/pace.min.css" rel="stylesheet">
+    <script src="js/pace.min.js"></script>
+    <!--theme-->
+    <link id="theme" href="css/themes/type-c/theme-dark.min.css" rel="stylesheet">
+    <!--Hoja de estilos propia-->
+    <link href="css/quantic.css" rel="stylesheet">
+    
+    <!--Bootstrap Validator [ PARA WIZARD ]-->
+    <link href="plugins/bootstrap-validator/bootstrapValidator.min.css" rel="stylesheet">
+    
+    <!--Bootstrap Select [ OPTIONAL ]-->
+    <link href="plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
+
+    <!--Select2 [ OPTIONAL ]-->
+    <link href="plugins/select2/css/select2.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="container" class="effect aside-float aside-bright mainnav-lg navbar-fixed">
+        <!--NAVBAR-->
+        <header id="navbar">
+            <div id="navbar-container" class="boxed">
+                <!--LOGO-->
+                <div class="navbar-header">
+                    <a href="dashboard.html" class="navbar-brand">
+                        <img src="img/logo-quantic-b.png" alt="Quantic Marketing" class="logo-interno">
+                    </a>
+                </div>
+                <!--HEADER-->
+                <div class="navbar-content">
+                    <ul class="nav navbar-top-links">
+                        <li class="tgl-menu-btn">
+                            <a class="mainnav-toggle" href="#">
+                                <i class="psi-list-view"></i>
+                            </a>
+                        </li>
+                        <!--BUSCADOR-->
+                        <li>
+                            <div class="custom-search-form">
+                                <label class="btn btn-trans" for="search-input" data-toggle="collapse" data-target="#nav-searchbox">
+                                    <i class="psi-magnifi-glass"></i>
+                                </label>
+                                <form>
+                                    <div class="search-container collapse" id="nav-searchbox">
+                                        <input id="search-input" type="text" class="form-control" placeholder="Buscar...">
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-top-links">
+                        <!--ACCESO DIRECTO-->
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                                <i class="psi-gear"></i>
+                            </a>
+                            <!--MENU DE ACCESO DIRECTO-->
+                            <div class="dropdown-menu dropdown-menu-md dropdown-menu-right">
+                                <div class="nano scrollable">
+                                    <div class="nano-content">
+                                        <ul class="head-list">
+                                            <li>
+                                                <a href="#" class="media add-tooltip" data-title="QF6 Posicionados 50%" data-container="body" data-placement="bottom">
+                                                    <div class="media-left">
+                                                        <i class="psi-signal icon-2x text-main"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p class="text-nowrap text-main text-semibold">QF6 Posicionados</p>
+                                                        <div class="progress progress-sm mar-no">
+                                                            <div style="width: 50%;" class="progress-bar progress-bar-success">
+                                                                <span class="sr-only">QF6 Posicionados 50%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="media" href="#">
+                                                    <div class="media-left">
+                                                        <i class="psi-wifi-2 icon-2x"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p class="mar-no text-nowrap text-main text-semibold">Posicionar QF6</p>
+                                                        <small>Inscribir un comercio</small>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="media" href="#">
+                                                    <div class="media-left">
+                                                        <i class="psi-photo-2 icon-2x"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p class="mar-no text-nowrap text-main text-semibold">Cambiar Avisos</p>
+                                                        <small>Crear, modificar o borrar anuncio de comercio</small>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="media" href="#">
+                                                    <div class="media-left">
+                                                        <i class="psi-add-basket icon-2x"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p class="mar-no text-nowrap text-main text-semibold">Solicitar QF6</p>
+                                                        <small>Solicitar nuevos QF6 para posicionar</small>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--Vinculo Servicio al cliente-->
+                                <div class="pad-all bord-top">
+                                    <a href="#" class="btn-link text-main box-block">
+                                        <i class="psi-headset pull-right"></i>Servicio al Cliente
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <!--ACCESO DIRECTO A USUARIO-->
+                        <li id="dropdown-user" class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle text-right">
+                                <span class="ic-user pull-right">
+                                    <i class="psi-male"></i>
+                                </span>
+                                <div class="username hidden-xs">Pepe Perez</div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right panel-default">
+                                <ul class="head-list">
+                                    <li>
+                                        <a href="#"><i class="psi-male icon-lg icon-fw"></i> Perfil</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="psi-mail icon-lg icon-fw"></i> Mi identificación virtual</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="badge badge-danger pull-right">9</span><i class="psi-mail icon-lg icon-fw"></i> Solicitudes</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="login.html"><i class="psi-unlock icon-lg icon-fw"></i> Salir</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!--===================================================-->
+
+        <div class="boxed">
+            <!--CONTENIDO-->
+            <div id="content-container">
+                <!--titulo-->
+                <div id="page-head">
+                    <div id="page-title">
+                        <h1 class="page-header text-overflow">Posicionart un QF6</h1>
+                    </div>
+                    <ol class="breadcrumb">
+					<li><a href="#"><i class="psi-home"></i></a></li>
+					<li><a href="#">Mis QF6</a></li>
+					<li class="active">Posicionar un QF6</li>
+                    </ol>
+                </div>
+                <div id="page-content">                    
+					    <div class="row">
+					        <div class="col-12">
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <p class="panel-title">Wizard</p>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div id="step-wz">
+					                <div class="wz-heading wz-w-label bg-primary">
+					
+					                    <!--Progress bar-->
+					                    <div class="progress progress-xs">
+					                        <div style="width: 15%;" class="progress-bar progress-bar-success"></div>
+					                    </div>
+					
+					                    <!--Nav-->
+					                    <ul class="wz-steps wz-icon-bw wz-nav-off text-lg">
+					                        <li class="col-xs-3">
+					                            <a data-toggle="tab" href="#step-tab1">
+					                                <span class="icon-wrap icon-wrap-xs icon-circle bg-success mar-ver">
+					                                    <span class="wz-icon icon-txt text-bold">1</span>
+					                                    <i class="wz-icon-done psi-like"></i>
+					                                </span>
+					                                <small class="wz-desc box-block text-semibold">Crear Comercio</small>
+					                            </a>
+					                        </li>
+					                        <li class="col-xs-3">
+					                            <a data-toggle="tab" href="#step-tab2">
+					                                <span class="icon-wrap icon-wrap-xs icon-circle bg-success mar-ver">
+					                                    <span class="wz-icon icon-txt text-bold">2</span>
+					                                    <i class="wz-icon-done psi-like"></i>
+					                                </span>
+					                                <small class="wz-desc box-block text-semibold">Seleccionar Plan</small>
+					                            </a>
+					                        </li>
+					                        <li class="col-xs-3">
+					                            <a data-toggle="tab" href="#step-tab3">
+					                                <span class="icon-wrap icon-wrap-xs icon-circle bg-success mar-ver">
+					                                    <span class="wz-icon icon-txt text-bold">3</span>
+					                                    <i class="wz-icon-done psi-like"></i>
+					                                </span>
+					                                <small class="wz-desc box-block text-semibold">Forma de Pago</small>
+					                            </a>
+					                        </li>
+					                        <li class="col-xs-3">
+					                            <a data-toggle="tab" href="#step-tab4">
+					                                <span class="icon-wrap icon-wrap-xs icon-circle bg-success mar-ver">
+					                                    <span class="wz-icon icon-txt text-bold">4</span>
+					                                    <i class="wz-icon-done psi-like"></i>
+					                                </span>
+					                                <small class="wz-desc box-block text-semibold">Gracias por su compra</small>
+					                            </a>
+					                        </li>
+					                    </ul>
+					                </div>
+					
+					                <!--Form-->
+					                <form class="form-horizontal">
+					                    <div class="panel-body">
+					                        <div class="tab-content">
+					
+					                            <!--First tab-->
+					                            <div id="step-tab1" class="tab-pane">
+					                                <div class="form-group col-md-6">
+					                                    <label class="col-lg-3 control-label">Nombre</label>
+					                                    <div class="col-lg-7">
+					                                        <input type="text" class="form-control" name="nombre" placeholder="Nombre">
+					                                    </div>
+					                                </div>
+					                                <div class="form-group col-md-6">
+					                                    <label class="col-lg-3 control-label">Documento de identidad</label>
+					                                    <div class="col-lg-7">
+					                                        <input type="number" class="form-control" name="documento" placeholder="Documento de identidad">
+					                                    </div>
+					                                </div>
+					                                <div class="form-group col-md-6">
+					                                    <label class="col-lg-3 control-label">Correo electrónico</label>
+					                                    <div class="col-lg-7">
+					                                        <input type="email" class="form-control" name="correo" placeholder="Correo electrónico">
+					                                    </div>
+					                                </div>
+					                                <div class="form-group col-md-6">
+					                                    <label class="col-lg-3 control-label">Celular</label>
+					                                    <div class="col-lg-7">
+					                                        <input type="tel" class="form-control" name="cel" placeholder="Celular">
+					                                    </div>
+					                                </div>
+					                                <div class="form-group col-md-12">
+					                                    <label class="col-lg-3 control-label">Dirección</label>
+					                                    <div class="col-lg-7">
+					                                        <input type="text" class="form-control" name="direccion" placeholder="Dirección">
+					                                    </div>
+					                                </div>
+					                                <div class="form-group col-md-6">
+					                                    <label class="col-lg-3 control-label">Comercio</label>
+					                                    <div class="col-lg-7">
+					                                        <input type="tex" class="form-control" name="comercio" placeholder="Comercio">
+					                                    </div>
+					                                </div>
+					                                <div class="form-group col-md-6">
+					                                    <label class="col-lg-3 control-label">Ciudad</label>
+					                                    <div class="col-lg-7">
+					                                        <select id="demo-select2" class="demo_select2 form-control">
+                                                                <optgroup label="ZONA 1">
+                                                                    <option value="AK">Bogota</option>
+                                                                    <option value="HI">Soacha</option>
+                                                                </optgroup>
+                                                                <optgroup label="ZONA 2">
+                                                                    <option value="CA">Cali</option>
+                                                                    <option value="NV">Tulua</option>
+                                                                    <option value="OR">Buga</option>
+                                                                </optgroup>
+                                                                <optgroup label="ZOMA 3">
+                                                                    <option value="AZ">Bucaramanga</option>
+                                                                    <option value="CO">Floridablanca</option>
+                                                                    <option value="ID">Pie de cuesta</option>
+                                                                </optgroup>
+                                                            </select>
+					                                    </div>
+					                                </div>
+					                                
+					                            </div>
+					
+					                            <!--Second tab-->
+					                            <div id="step-tab2" class="tab-pane fade">
+                                                   
+                                                   <div class="row">
+                                                      <div class="col-md-6">
+                                                          <h3>Plan al instante</h3>
+                                                          <p>Seleccione el QF6 que será asignado al comercio</p>
+                                                          <select class="demo_select2 form-control">
+                                                              <option>Seleccione...</option>
+                                                              <option>ADFK49380</option>
+                                                              <option>ADFK49380</option>
+                                                              <option>ADFK49380</option>
+                                                              <option>ADFK49380</option>
+                                                          </select>
+                                                          <p><small>Recuerde que el código de cada QF6 es único y debe validarlo con el que esta impreso en el dispositivo.</small></p>
+                                                          
+                                                      </div>
+                                                      <div class="col-md-6 bg-gray">
+                                                          <h3>Plan Especial</h3>
+                                                          <p>Seleccione el Paquete de QF6 que ha solicitado el  comercio</p>
+                                                          <select class="demo_select2 form-control">
+                                                              <option>Seleccione Paquete...</option>
+                                                              <option>0 a 10 QF6</option>
+                                                              <option>11 a 25 QF6</option>
+                                                              <option>26 a 50 QF6</option>
+                                                              <option>51 a 100 QF6</option>
+                                                          </select>
+                                                          <p><small>Recuerde ingresar la cantidad de QF6 que se van a posicionar en el comercio en el rango seleccionado.</small></p>
+                                                          <div class="form-group">
+                                                            <label class="col-lg-3 control-label">Número de QF6 dentro del rango seleccionado</label>
+                                                            <div class="col-lg-7">
+                                                                <input type="number" placeholder="Número de QF6" name="PE-QF6-numero" class="form-control">
+                                                            </div>
+					                                      </div>
+                                                      </div>
+                                                   </div>
+					                            </div>
+					
+					                            <!--Third tab-->
+					                            <div id="step-tab3" class="tab-pane mar-btm text-center">
+					                                <h4>Plan al instante</h4>
+					                                <p>Señor Quantic Marketer, si el comercio ha elegido el plan al instante, debe pagar el QF6 al instante para ser posicionado de inmediato.</p>
+					                                <h4>Plan al instante</h4>
+					                                <p>Si el comercio ha elegido un Plan Especial, recuerde que el encargado del comercio deberá ingresar a la plataforma con su usuario y contraseña enviados al correo electrónico que registró para seguir con el proceso de pago, una vez se haya validado el pago, serán enviados los QF6 para su posicionamiento.</p>
+					                            </div>
+					
+					                            <!--Fourth tab-->
+					                            <div id="step-tab4" class="tab-pane mar-btm text-center">
+					                                <h4>{Nombre del comercio}, Gracias por registrarse </h4>
+					                                <p>Sus por favor verifique la infornación registrada</p>
+					                                <p>{Nombre del comercio}</p>
+					                                <p>{Dirección}</p>
+					                                <p>{Ciudad}</p>
+					                                <p>{documento de identidad}</p>
+					                                <p>{nombre del responsable}</p>
+					                                <p>{correo electrónico}</p>
+					                                <p>{Celular}</p>
+					                            </div>
+					                        </div>
+					                    </div>
+					
+					                    <!--Footer button-->
+					                    <div class="panel-footer text-right">
+					                        <div class="box-inline">
+					                            <button type="button" class="previous btn btn-success">Atrás</button>
+					                            <button type="button" class="next btn btn-default">Siguiente</button>
+					                            <button type="button" class="finish btn btn-success" disabled>Finalizar</button>
+					                        </div>
+					                    </div>
+					                </form>
+					            </div>
+                                    </div>
+                                </div>
+                            </div>
+					    </div>
+                </div>
+                <!--===================================================-->
+            </div>
+            <!--===================================================-->
+            <!--NAVEGACIÓN-->
+            <nav id="mainnav-container">
+                <div id="mainnav">
+                    <!--NAVEGACIÓN IZQUIERDA-->
+                    <div id="mainnav-menu-wrap">
+                        <div class="nano">
+                            <div class="nano-content">
+                                <!--PERFIL-->
+                                <div id="mainnav-profile" class="mainnav-profile">
+                                    <div class="profile-wrap text-center">
+                                    <!-- FOTO DE PERFIL -->
+                                        <!--<div class="pad-btm">
+                                            <img class="img-circle img-md" src="img/3.png" alt="Profile Picture">
+                                        </div>-->
+                                    <!--=======================================-->
+                                        <a href="#profile-nav" class="box-block" data-toggle="collapse" aria-expanded="false">
+                                            <span class="pull-right dropdown-toggle">
+                                                <i class="dropdown-caret"></i>
+                                            </span>
+                                            <p class="mnp-name">PEPE PEREZ</p>
+                                            <span class="mnp-desc"><b>QMID:</b> 00001</span>
+                                        </a>
+                                    </div>
+                                    <div id="profile-nav" class="collapse list-group bg-trans">
+                                        <a href="perfil.html" class="list-group-item">
+                                            <i class="psi-male icon-lg icon-fw"></i>Perfil
+                                        </a>
+                                        <a href="solicitudes.html" class="list-group-item">
+                                            <i class="psi-mail icon-lg icon-fw"></i>Mi identificación Virtual
+                                        </a>
+                                        <a href="solicitudes.html" class="list-group-item">
+                                            <i class="psi-mail icon-lg icon-fw"></i>Solicitudes
+                                            <span class="pull-right badge badge-danger">9</span>
+                                        </a>
+                                        <a href="login.html" class="list-group-item">
+                                            <i class="psi-unlock icon-lg icon-fw"></i>Salir
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--=======================================-->
+                                <!--MENU-->
+                                <ul id="mainnav-menu" class="list-group"> 
+                                    <li>
+						                <a href="dashboard.html">
+						                    <i class="psi-gauge-2"></i>
+						                    <span class="menu-title">Cuadro de control</span>
+						                </a>
+						            </li>
+                                    <li class="list-divider"></li>
+						            <!--CATEGORIA QF6-->
+						            <li class="list-header">QF6</li>
+						            <li>
+						                <a href="#">
+						                    <i class="psi-wifi-2"></i>
+						                    <span class="menu-title">Mis QF6</span>
+											<i class="arrow"></i>
+						                </a>
+                                        <ul class="collapse">
+						                    <li><a href="resumen-qf6.html">QF6 Posicionados</a></li>
+											<li><a href="posicionar-qf6.html">Posicionar un QF6</a></li>
+											<li><a href="#">Solicitar QF6</a></li>
+						                </ul>
+						            </li>
+                                     <li>
+						                <a href="red-qf6.html">
+						                    <i class="psi-wallet-2"></i>
+						                    <span class="menu-title">
+												Mis comisiones
+											</span>
+						                </a>
+						            </li>
+						            <li>
+						                <a href="red-qf6.html">
+						                    <i class="psi-location"></i>
+						                    <span class="menu-title">
+												Mi red de QF6
+											</span>
+						                </a>
+						            </li>
+						            <li>
+						                <a href="avisos-qf6.html">
+						                    <i class="psi-board"></i>
+						                    <span class="menu-title">Avisos publicados</span>
+						                </a>
+						            </li>
+						            <li>
+						                <a href="formularios-qf6.html">
+						                    <i class="psi-check"></i>
+						                    <span class="menu-title">Formularios</span>
+						                </a>
+
+						            </li>
+						            <li>
+						                <a href="#">
+						                    <i class="psi-calendar"></i>
+						                    <span class="menu-title">Agendamiento de avisos</span>
+						                </a>
+						            </li>
+						            <li>
+						                <a href="#">
+						                    <i class="psi-bar-chart"></i>
+						                    <span class="menu-title">Analiticas de QF6</span>
+						                </a>
+						            </li>
+                                    <!--=======================================-->
+                                    <!--CATEGORIA QUANTIC TOOLS CENTER-->
+						            <li class="list-divider"></li>
+						            <li class="list-header">Quantic	Tools Center</li>
+						            <li>
+						                <a href="#">
+						                    <i class="psi-monitor"></i>
+						                    <span class="menu-title">Recursos virtuales</span>
+						                </a>
+						            </li>
+						            <li>
+						                <a href="#">
+						                    <i class="psi-video-tripod"></i>
+						                    <span class="menu-title">Videos</span>
+						                </a>
+						            </li>
+						            <li>
+						                <a href="#">
+						                    <i class="psi-id-card"></i>
+						                    <span class="menu-title">Mi identificación Virtual</span>
+						                </a>
+						            </li>
+						            <li>
+						                <a href="#">
+						                    <i class="psi-file"></i>
+						                    <span class="menu-title">Noticias</span>
+						                </a>
+						            </li>
+                                    <li>
+						                <a href="#">
+						                    <i class="psi-student-hat-2"></i>
+						                    <span class="menu-title">Quantic Learning System</span>
+						                </a>
+						            </li>
+                                    <!--=======================================-->
+                                    <!--MENU QUANTIC SUPPORT CENTER-->
+						            <li class="list-divider"></li>
+                                    <li class="list-header">Quantic	Support Center</li>
+                                    <li>
+						                <a href="#">
+						                    <i class="psi-question"></i>
+						                    <span class="menu-title">Preguntas Frecuentes</span>
+						                </a>
+						            </li>
+                                    <li>
+						                <a href="#">
+						                    <i class="psi-headset"></i>
+						                    <span class="menu-title">Atención a usuario</span>
+						                </a>
+						            </li>
+                                    <li>
+						                <a href="#">
+						                    <i class="psi-facebook-2"></i>
+						                    <span class="menu-title">QM-Facebook</span>
+						                </a>
+						            </li>
+                                    <!--=======================================-->
+                                    <li class="list-divider"></li>
+						            <li>
+						                <a href="#">
+						                    <i class="psi-unlock"></i>
+						                    <span class="menu-title">Salir</span>
+						                </a>
+						            </li>
+                            </div>
+                        </div>
+                    </div>
+                    <!--================================-->
+                </div>
+            </nav>
+            <!--===================================================-->
+        </div>
+        <!--FOOTER-->
+        <footer id="footer">
+            <div class="hide-fixed pull-right pad-rgt">
+                Ver. 0.1 11-06-2018
+            </div>
+            <p class="pad-lft">&#0169; 2018 - QUANTIC MARKETING S.A.S. - BOGOTÁ D.C., COLOMBIA.</p>
+        </footer>
+        <!--===================================================-->
+        <!--BOTON SUBIR-->
+        <button class="scroll-top btn">
+            <i class="pci-chevron chevron-up"></i>
+        </button>
+        <!--===================================================-->
+    </div>
+    <!--===================================================-->
+    <!--JAVASCRIPT-->
+    <!--=================================================-->
+
+    <!--jQuery [ REQUIRED ]-->
+    <script src="js/jquery.min.js"></script>
+
+
+    <!--BootstrapJS [ RECOMMENDED ]-->
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <!--NiftyJS [ RECOMMENDED ]-->
+    <script src="js/nifty.min.js"></script>
+
+
+    <!--=================================================-->
+    
+    <!--Demo script [ DEMONSTRATION ]-->
+    <script src="js/qm/nifty-demo.min.js"></script>
+
+    <!--Bootstrap Wizard [ OPTIONAL ]-->
+    <script src="plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+    
+    <!--Form Wizard [ SAMPLE ]-->
+    <script src="js/qm/form-wizard.js"></script>
+
+    <!--Select2 [ OPTIONAL ]-->
+    <script src="plugins/select2/js/select2.min.js"></script>
+
+    <!--Form Component [ SAMPLE ]-->
+    <script src="js/qm/form-component.js"></script>
+       
+</body>
+</html>

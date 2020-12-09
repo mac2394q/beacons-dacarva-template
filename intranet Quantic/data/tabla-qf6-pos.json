@@ -1,0 +1,23 @@
+[
+	{
+		"ID": "AE38728IJDH",
+        "local": "Mis Carnes Parrilla - Cedritos",
+		"dir": "Av Carrera 19 # 137 - 24",
+        "cam": "Landing Page",
+        "est": "Activo"
+	},
+    {
+		"ID": "AE38728IJDH",
+        "local": "OXXO - Cedritos",
+		"dir": "Carrera 13 # 140 - 24",
+        "cam": "Formulario",
+        "est": "Activo"
+	},
+    {
+        "ID": "AE38728IJDH",
+		"local": "DHL - Cedritos",
+		"dir": "Calle 140 # 13 - 24",
+        "cam": "URL Personalizada",
+        "est": "Inactivo"
+	}
+]

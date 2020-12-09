@@ -1,0 +1,21 @@
+/*quantic.css*/
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,500,700');
+
+h1, h2, h3, h4 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.fondo {
+    background-image: url(../img/fn-quantic.jpg);
+}
+
+.logo-login {
+    max-width: 250px;
+}
+
+.logo-interno {
+    max-width: 137px;
+    padding: 10px;
+    margin: 0 auto;
+}
